@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Weather</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="title-box">
+            <h1 class="title">What's the Weather?</h1>
+        </div>
+        <div class="display-box">
+            <input 
+                id="location" 
+                class="display-box-center"
+                name="location" 
+                type="text" 
+                placeholder="Enter city here..."
+            />
+            <button id="search" class="display-box-center search">Search</button>
+            <br/><br/>
+            <!--Information on weather conditions; watch the line breaks-->
+            <span class="info-label">Temperature: </span>
+            <span id="temp" class="info display-box-right"></span><br/>
+
+            <span class="info-label">Feels Like: </span>
+            <span id="feels-like" class="info display-box-right"></span><br/>
+
+            <span class="info-label update-message">Last updated: </span>
+            <span 
+                id="last-updated" 
+                class="info display-box-right update-message">
+            </span><br/>
+
+            <span class="info-label update-message">Time Zone: </span>
+            <span class="info-label display-box-right update-message"></span>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
